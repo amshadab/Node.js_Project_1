@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "first_name": "Walter",
+    "first_name": "Andrew",
     "last_name": "White",
     "email": "abc@gmail.com",
     "gender": "male",
@@ -8008,11 +8008,11 @@
     "id": 1001
   },
   {
-    "first_name": "faizan",
-    "last_name": "sayyed",
+    "first_name": "Rust",
+    "last_name": "Cohle",
     "email": "abc@gmail.com",
     "gender": "male",
-    "job_title": "software dev",
-    "id": 1003
+    "job_title": "Detective",
+    "id": 1004
   }
 ]
