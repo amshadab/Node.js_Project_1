@@ -1,7 +1,7 @@
 const express = require("express");
 const users = require("./MOCK_DATA.json");
 const fs = require("fs");
-const { json } = require("stream/consumers");
+
 
 const app = express();
 const PORT = 8000;
@@ -32,10 +32,36 @@ app
     return res.json(user);
   })
   .patch((req, res) => {
-    return res.json({ status: "pending" });
+    const id = Number(req.params.id);
+    const body = req.body;
+    u=users.map(user=>{
+      if(user.id===id){
+        return {...user,...body}
+      }
+      else{
+        return user;
+      }
+  
+    });
+
+    fs.writeFile("./MOCK_DATA.json",JSON.stringify(u),(err)=>{
+      if(err){
+        console.log(err);
+        
+      }
+    });
+
+    return res.json({ status: "Success",id:"Updated" });
   })
   .delete((req, res) => {
-    return res.json({ status: "pending" });
+    const id = Number(req.params.id);
+    const updatedUsers=users.filter(user=>user.id!==id);
+    fs.writeFile("./MOCK_DATA.json",JSON.stringify(updatedUsers),(err)=>{
+      if(err){
+        console.log(err);
+      }
+    });
+    return res.json({ status: "Success", id:"Deleted" });
   });
 
 app.post("/api/users", (req, res) => {

@@ -1,19 +1,19 @@
 [
   {
     "id": 1,
-    "first_name": "Fionna",
-    "last_name": "Beardon",
-    "email": "fbeardon0@t.co",
-    "gender": "Female",
-    "job_title": "Administrative Assistant I"
+    "first_name": "Shadab",
+    "last_name": "Ansari",
+    "email": "abc@gmail.com",
+    "gender": "male",
+    "job_title": "software dev"
   },
   {
     "id": 2,
-    "first_name": "Emmaline",
-    "last_name": "Leeds",
-    "email": "eleeds1@histats.com",
-    "gender": "Female",
-    "job_title": "Technical Writer"
+    "first_name": "Walter",
+    "last_name": "White",
+    "email": "abc@gmail.com",
+    "gender": "male",
+    "job_title": "Cook"
   },
   {
     "id": 3,
@@ -8006,14 +8006,6 @@
     "gender": "male",
     "job_title": "software dev",
     "id": 1001
-  },
-  {
-    "first_name": "shady",
-    "last_name": "Ansari",
-    "email": "abc@gmail.com",
-    "gender": "male",
-    "job_title": "software dev",
-    "id": 1002
   },
   {
     "first_name": "faizan",
