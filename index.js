@@ -30,6 +30,13 @@ app.get("/users", (req, res) => {
 
 // return json
 app.get("/api/users", (req, res) => {
+  console.log(req.headers);
+  
+  res.set({
+    "X-Myname":"Shadab",
+    "X-Path":req.path
+  
+  });
   return res.json(users);
 });
 
